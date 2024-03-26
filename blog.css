@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "arial";
+}
+body , html{
+    height: 100%;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.nav-links{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: black;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+
+}
+#heading1{
+    font-size: 8vw;
+    font-weight: 400;
+    padding-top: 5rem;
+    padding-left: 3rem;
+
+}
+#para1{
+    width: 35%;
+    text-align: left;
+    align-self: flex-end;
+    padding: 2rem;
+    font-size: 1vw;
+    line-height: 1.3rem;
+}
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+.images{
+    width: 30vw;
+    height: 60vh;
+    margin: 2rem 0;
+}
+.image{
+    width: 30vw;
+    height: 60vh;
+    background: url(./images/image.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: background-size 3s;
+}
+.image:hover{
+    background-size: 120%;
+}
+img{
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 1s;
+    padding-bottom: 1rem;
+}
+img:hover{
+    transform: scale(1.02);
+}
+.text{
+    font-size: 1.9vw;
+}
+hr{
+    margin-top: 1rem;
+    width: 30vw;
+    height: 0.1rem;
+    background-color: rgb(240, 240, 240);
+    border: none;
+    outline: none;
+}
